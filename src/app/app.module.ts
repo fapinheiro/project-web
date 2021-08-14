@@ -10,6 +10,7 @@ import { ImageLegendComponent } from './image-legend/image-legend.component';
 import { ImageFloatComponent } from './image-float/image-float.component';
 import { ClearfixComponent } from './clearfix/clearfix.component';
 import { BoxModelComponent } from './box-model/box-model.component';
+import { CenterComponent } from './center/center.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BoxModelComponent } from './box-model/box-model.component';
     ImageLegendComponent,
     ImageFloatComponent,
     ClearfixComponent,
-    BoxModelComponent
+    BoxModelComponent,
+    CenterComponent
   ],
   imports: [
     CommonModule,

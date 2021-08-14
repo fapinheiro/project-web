@@ -1,0 +1,21 @@
+$height: 100px;
+
+.center {
+    height: $height;
+    text-align: center;
+    line-height: $height; // the size of the outer div height
+    border: solid 1px green;
+}
+
+.center2 {
+    height: $height;
+    position: relative;
+    border: solid 1px red;
+}
+
+.center2-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
