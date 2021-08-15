@@ -1,9 +1,11 @@
+$height: 5ch;
+
 .tnt {
 	border-radius: 50%;
 	border: 5px solid #000;
-	height: 50px;
+	min-height: $height;
 	line-height: 50px;
 	text-align: center;
 	width: 50px;
-	}
+}
 	

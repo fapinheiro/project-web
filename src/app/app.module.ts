@@ -11,6 +11,8 @@ import { ImageFloatComponent } from './image-float/image-float.component';
 import { ClearfixComponent } from './clearfix/clearfix.component';
 import { BoxModelComponent } from './box-model/box-model.component';
 import { CenterComponent } from './center/center.component';
+import { FlexboxComponent } from './flexbox/flexbox.component';
+import { GridboxComponent } from './gridbox/gridbox.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CenterComponent } from './center/center.component';
     ImageFloatComponent,
     ClearfixComponent,
     BoxModelComponent,
-    CenterComponent
+    CenterComponent,
+    FlexboxComponent,
+    GridboxComponent
   ],
   imports: [
     CommonModule,

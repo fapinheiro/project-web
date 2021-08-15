@@ -9,18 +9,19 @@
 	padding: 3px;
   }
 
-  .error {
+.error {
 	color: red;
 	display: none;
 	font-size: 0.8em;
 	font-style: italic;
 	margin: 5px 0 0 90px;
-  }
+}
   
-  input:focus ~ .hint, textarea:focus ~ .hint {
-	  display: inline-block;
-  }
+// p ~ ul Selects every <ul> element that is preceded by a <p> element
+input:focus ~ .hint, textarea:focus ~ .hint {
+	display: inline-block;
+}
 
-  input:invalid ~ .error {
-		display: inline-block;
-  }
+input:invalid ~ .error {
+	display: inline-block;
+}
