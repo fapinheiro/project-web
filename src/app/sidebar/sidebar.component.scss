@@ -1,0 +1,93 @@
+.hide {
+	display: none;
+}
+
+span {
+	display: block;
+}
+
+.logo {
+	margin-left: 2ch;
+
+	.menu-icon {
+		cursor: pointer;
+	}
+
+}
+
+aside {
+	--hue: 180;
+	--saturation: 80%;
+	--light: 30%;
+	float: left;
+	width: 20%;
+	background: hsl(var(--hue), var(--saturation), var(--light));
+	transition: 0.5s;
+	
+	&.expand {
+		width: 5%;
+	}
+}
+
+article {
+	float: left;
+	width: 80%;
+	// margin-left: 5px;
+
+	h1, h2, p {
+		margin-left: 0.5em;
+	}
+
+	&.expand {
+		width: 95%;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+.side-menu {
+	position: initial;
+	display: initial;
+}
+
+.sub-menu {
+	position: initial;
+	display: initial;
+	display: none;
+
+	li {
+		margin-left: 3ch;	
+	}
+
+}
+
+.nav-item {
+	margin-left: 2ch;
+	transition: 0.5s;
+
+	&.active {
+
+		.sub-menu {
+			display: block;
+		}
+	}
+}
+
+i {
+	margin: 5px; 
+}
+
+.active {
+	--light: 10%;
+	background: hsl(var(--hue), var(--saturation), var(--light));
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

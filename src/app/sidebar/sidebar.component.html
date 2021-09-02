@@ -1,0 +1,73 @@
+<section>
+	<aside [class.expand]="isAside === true">
+		<div class="logo">
+			<span class="menu-icon" (click)="setAside()">
+				<i class="bx bx-menu"></i>
+			</span>
+			<span [class.hide]="isAside === true">PROJETO WEB</span>
+		</div>
+		
+		<ul class="side-menu">
+			<li class="nav-item" [class.active]="navItem === 'dashboard'" >
+				<a (mouseover)="setNavItem('dashboard', $event)">
+					<i class="bx bxs-dashboard"></i>
+					<span [class.hide]="isAside === true">Dashboard</span>
+					<i class="bx bxs-chevron-right"></i>
+				</a>
+				<ul class="sub-menu">
+					<li><a href="#">Dashboar_1</a></li>
+					<li><a href="#">Dashboar_2</a></li>
+					<li><a href="#">Dashboar_3</a></li>
+				</ul>
+			</li>
+			<li class="nav-item" [class.active]="navItem === 'inbox'">
+				<a (mouseover)="setNavItem('inbox', $event)">
+					<i class="bx bxs-inbox"></i>
+					<span [class.hide]="isAside === true">Inboxs</span>
+				</a>
+			</li>
+			<li class="nav-item" [class.active]="navItem === 'widget'" >
+				<a (mouseover)="setNavItem('widget', $event)">
+					<i class="bx bxs-cube"></i>
+					<span [class.hide]="isAside === true">Widgets</span>
+				</a>
+			</li>
+			<li class="nav-item" [class.active]="navItem === 'files'" >
+				<a (mouseover)="setNavItem('files', $event)">
+					<i class="bx bxs-folder-open"></i>
+					<span [class.hide]="isAside === true">Files</span>
+				</a>
+			</li>
+			<li class="nav-item" [class.active]="navItem === 'icons'" >
+				<a (mouseover)="setNavItem('icons', $event)">
+					<i class="bx bxs-copy"></i>
+					<span [class.hide]="isAside === true">Icons</span>
+					<i class="bx bxs-chevron-right"></i>
+				</a>
+				<ul class="sub-menu">
+					<li><a href="#">Fontwasome</a></li>
+					<li><a href="#">Boxicons</a></li>
+					<li><a href="#">Ionicons</a></li>
+				</ul>
+			</li>
+			<li class="nav-item" [class.active]="navItem === 'pages'" >
+				<a (mouseover)="setNavItem('pages', $event)">
+					<i class="bx bxs-user"></i>
+					<span [class.hide]="isAside === true">User Pages</span>
+					<i class="bx bxs-chevron-right"></i>
+				</a>
+				<ul class="sub-menu">
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">Developer</a></li>
+					<li><a href="#">Customers</a></li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+	<article [class.expand]="isAside === true">
+		<h1>Components</h1>
+		<h2>Sidebar in Javascript</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	</article>
+</section>
+

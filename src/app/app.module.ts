@@ -13,6 +13,7 @@ import { BoxModelComponent } from './box-model/box-model.component';
 import { CenterComponent } from './center/center.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
 import { GridboxComponent } from './gridbox/gridbox.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GridboxComponent } from './gridbox/gridbox.component';
     BoxModelComponent,
     CenterComponent,
     FlexboxComponent,
-    GridboxComponent
+    GridboxComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,

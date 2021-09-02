@@ -10,6 +10,7 @@ import { GridboxComponent } from './gridbox/gridbox.component';
 import { ImageFloatComponent } from './image-float/image-float.component';
 import { ImageLegendComponent } from './image-legend/image-legend.component';
 import { InputValidationComponent } from './input-validation/input-validation.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
   { path: 'input-validation', component: InputValidationComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'box-model', component: BoxModelComponent},
   { path: 'center', component: CenterComponent},
   { path: 'flexbox', component: FlexboxComponent},
-  { path: 'gridbox', component: GridboxComponent}
+  { path: 'gridbox', component: GridboxComponent},
+  { path: 'sidebar', component: SidebarComponent},
 ];
 
 @NgModule({
