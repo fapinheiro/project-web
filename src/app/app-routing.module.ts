@@ -1,11 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnimationComponent } from './animation/animation.component';
+import { BackgroundComponent } from './background/background.component';
 import { BoxModelComponent } from './box-model/box-model.component';
 import { CenterComponent } from './center/center.component';
 import { CirculoComponent } from './circulo/circulo.component';
 import { ClearfixComponent } from './clearfix/clearfix.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
+import { GradientComponent } from './gradient/gradient.component';
 import { GridboxComponent } from './gridbox/gridbox.component';
 import { ImageFloatComponent } from './image-float/image-float.component';
 import { ImageLegendComponent } from './image-legend/image-legend.component';
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'flexbox', component: FlexboxComponent},
   { path: 'gridbox', component: GridboxComponent},
   { path: 'sidebar', component: SidebarComponent},
+  { path: 'background', component: BackgroundComponent},
+  { path: 'gradient', component: GradientComponent},
+  { path: 'animation', component: AnimationComponent},
 ];
 
 @NgModule({

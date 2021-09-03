@@ -14,6 +14,9 @@ import { CenterComponent } from './center/center.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
 import { GridboxComponent } from './gridbox/gridbox.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { BackgroundComponent } from './background/background.component';
+import { GradientComponent } from './gradient/gradient.component';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CenterComponent,
     FlexboxComponent,
     GridboxComponent,
-    SidebarComponent
+    SidebarComponent,
+    BackgroundComponent,
+    GradientComponent,
+    AnimationComponent
   ],
   imports: [
     CommonModule,
