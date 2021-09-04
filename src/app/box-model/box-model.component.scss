@@ -1,4 +1,6 @@
-* {
+// Without box-sizing the padding pushes the element's borders
+// Try to comment
+*, *::after, *::before {
 	box-sizing: border-box;
 }
 

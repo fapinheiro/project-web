@@ -22,7 +22,7 @@ aside {
 	float: left;
 	width: 20%;
 	background: hsl(var(--hue), var(--saturation), var(--light));
-	transition: 0.5s;
+	transition: width 0.5s;
 	
 	&.expand {
 		width: 5%;
@@ -65,7 +65,6 @@ li {
 
 .nav-item {
 	margin-left: 2ch;
-	transition: 0.5s;
 
 	&.active {
 

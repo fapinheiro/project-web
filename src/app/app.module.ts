@@ -17,6 +17,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { BackgroundComponent } from './background/background.component';
 import { GradientComponent } from './gradient/gradient.component';
 import { AnimationComponent } from './animation/animation.component';
+import { NavWithoutJsComponent } from './nav-without-js/nav-without-js.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { AnimationComponent } from './animation/animation.component';
     SidebarComponent,
     BackgroundComponent,
     GradientComponent,
-    AnimationComponent
+    AnimationComponent,
+    NavWithoutJsComponent,
+    IndexComponent
   ],
   imports: [
     CommonModule,

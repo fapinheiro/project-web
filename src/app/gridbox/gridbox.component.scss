@@ -10,6 +10,7 @@
     min-height: 10vh;
 }
 
+// As many as fit with a minimal of 200px
 .grid-layout-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

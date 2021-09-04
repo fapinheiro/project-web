@@ -12,23 +12,31 @@ import { GradientComponent } from './gradient/gradient.component';
 import { GridboxComponent } from './gridbox/gridbox.component';
 import { ImageFloatComponent } from './image-float/image-float.component';
 import { ImageLegendComponent } from './image-legend/image-legend.component';
+import { IndexComponent } from './index/index.component';
 import { InputValidationComponent } from './input-validation/input-validation.component';
+import { NavWithoutJsComponent } from './nav-without-js/nav-without-js.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
-  { path: 'input-validation', component: InputValidationComponent},
-  { path: 'circulo', component: CirculoComponent},
-  { path: 'image-legend', component: ImageLegendComponent},
-  { path: 'image-float', component: ImageFloatComponent},
-  { path: 'clearfix', component: ClearfixComponent},
-  { path: 'box-model', component: BoxModelComponent},
-  { path: 'center', component: CenterComponent},
-  { path: 'flexbox', component: FlexboxComponent},
-  { path: 'gridbox', component: GridboxComponent},
-  { path: 'sidebar', component: SidebarComponent},
-  { path: 'background', component: BackgroundComponent},
-  { path: 'gradient', component: GradientComponent},
-  { path: 'animation', component: AnimationComponent},
+  { path: '', redirectTo: 'index', pathMatch: 'full'},
+  { path: 'nav-without-js', component: NavWithoutJsComponent},
+  { path: 'index',
+    children: [
+      { path: '', component: IndexComponent},
+      { path: 'input-validation', component: InputValidationComponent, outlet: 'sidebar'},
+      { path: 'circulo', component: CirculoComponent},
+      { path: 'image-legend', component: ImageLegendComponent},
+      { path: 'image-float', component: ImageFloatComponent},
+      { path: 'clearfix', component: ClearfixComponent},
+      { path: 'box-model', component: BoxModelComponent},
+      { path: 'center', component: CenterComponent},
+      { path: 'flexbox', component: FlexboxComponent},
+      { path: 'gridbox', component: GridboxComponent},
+      { path: 'sidebar', component: SidebarComponent},
+      { path: 'background', component: BackgroundComponent},
+      { path: 'gradient', component: GradientComponent},
+      { path: 'animation', component: AnimationComponent}      
+    ]},
 ];
 
 @NgModule({

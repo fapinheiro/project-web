@@ -1,37 +1,39 @@
-<!-- # Display
-- Elementos de texto, como a, span e small, possuem um valor inline
-- Containers como div, p, section e similares são tratados como blocos/block.
+<app-index>
+	<!-- # Display
+	- Elementos de texto, como a, span e small, possuem um valor inline
+	- Containers como div, p, section e similares são tratados como blocos/block.
+	
+	none, block, inline
+	
+	## Float
+	Flutua elements block para nao ocupar 100%
+	
+	
+	- Para garantir que um elemento não vá seguir a orientação de um antecessor que
+	Se estiver com float, você precisa utilizar a propriedade clear. Você pode informar o
+	mesmo sentido que os seus elementos estão flutuando - left ou right - ou utilizar
+	both, que quebra o fuxo em ambos os sentidos.
+	
+	p {
+		clear: both;
+	} -->
 
-none, block, inline
-
-## Float
-Flutua elements block para nao ocupar 100%
-
-
-- Para garantir que um elemento não vá seguir a orientação de um antecessor que
-Se estiver com float, você precisa utilizar a propriedade clear. Você pode informar o
-mesmo sentido que os seus elementos estão flutuando - left ou right - ou utilizar
-both, que quebra o fuxo em ambos os sentidos.
-
-p {
-clear: both;
-} -->
-
-<h3>How I Met Your Mother</h3>
-<img src="assets/sf.jpg" alt="A Golden Gate." width="300" height="200">
-<p>
-A série gira em torno da vida de Ted Mosby e dos seus amigos,
-que é narrada pelo próprio aos seus filhos, 25 anos mais tarde.
-Bob Saget, como Ted Mosby do futuro, conta então aos filhos as
-histórias e peripécias que o levaram a conhecer a mãe deles.
-As outras personagens principais são Marshall Eriksen,
-Robin Scherbatsky, Lily Aldrin e Barney Stinson.
-</p>
-<p class="clear">
-Em 2005, aos 27 anos, o jovem Ted Mosby (Josh Radnor), após o
-seu melhor amigo, Marshall Eriksen (Jason Segel), ficar noivo,
-decide finalmente ir em busca da sua cara-metade. Com gestos
-românticos questionáveis, Ted conhece Robin Scherbatsky
-(Cobie Smulders), no bar que costuma frequentar,
-Maclaren's Pub.
-</p>
+	<h3>How I Met Your Mother</h3>
+	<img src="assets/sf.jpg" alt="A Golden Gate." width="300" height="200">
+	<p>
+		A série gira em torno da vida de Ted Mosby e dos seus amigos,
+		que é narrada pelo próprio aos seus filhos, 25 anos mais tarde.
+		Bob Saget, como Ted Mosby do futuro, conta então aos filhos as
+		histórias e peripécias que o levaram a conhecer a mãe deles.
+		As outras personagens principais são Marshall Eriksen,
+		Robin Scherbatsky, Lily Aldrin e Barney Stinson.
+	</p>
+	<p class="clear">
+		Em 2005, aos 27 anos, o jovem Ted Mosby (Josh Radnor), após o
+		seu melhor amigo, Marshall Eriksen (Jason Segel), ficar noivo,
+		decide finalmente ir em busca da sua cara-metade. Com gestos
+		românticos questionáveis, Ted conhece Robin Scherbatsky
+		(Cobie Smulders), no bar que costuma frequentar,
+		Maclaren's Pub.
+	</p>
+</app-index>
