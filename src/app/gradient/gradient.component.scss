@@ -1,0 +1,16 @@
+.gradient {
+	width: 100%;
+	min-height: 80vh;
+	/* From left to right*/
+	// background: linear-gradient(to right, red, blue);
+	
+	/* From top to bottom*/
+	// background: linear-gradient(to bottom, orange, white);
+
+	/* From top left to bottom right*/
+	// background: linear-gradient(to bottom right, #2E8B57, white);
+
+	/* From 0 degres */
+	background: linear-gradient(120deg, #2E8B57, white);
+
+}

@@ -1,0 +1,76 @@
+[type=button] {
+	width: 10ch;
+	height: 5vh;
+	background: rgb(147, 187, 255);
+
+	&:hover {
+		background: rgba(147, 187, 255, 0.4);
+		--transition: 0.3s;
+		transition: var(--transition);
+		-webkit-transition: var(--transition); // Safari
+		-o-transition: var(--transition); // Opera
+		-moz-transition: var(--transition); // Firefox
+	}
+}
+
+[value=Rotate] {
+	--rotate: -45deg;
+	transform: rotate(var(--rotate));
+	-webkit-transform: rotate(var(--rotate)); // Safari
+	-o-transform: rotate(var(--rotate)); // Opera
+	-moz-transform: rotate(var(--rotate)); //Firefox
+	-ms-transform: rotate(var(--rotate)); //IE
+}
+
+[value=Transform] {
+	--x: 5px;
+	--y: 40px;
+	transform: translate(var(--x), var(--y)); // X and Y
+	-webkit-transform: translate(var(--x), var(--y)); // Safari
+	-o-transform: translate(var(--x), var(--y)); // Opera
+	-moz-transform: translate(var(--x), var(--y)); // Firefox
+	-ms-transform: translate(var(--x), var(--y)); // IE
+}
+
+[value=Animation] {
+	// animation-name: left-to-right;
+	// animation-duration: 5s;
+	// animation-timing-function: linear;
+	// animation-delay: 1s;
+	// animation-iteration-count: infinite;
+	// animation-direction: alternate;
+
+	// in one line
+	animation: left-to-right 5s linear 1s infinite alternate;
+	-webkit-animation: left-to-right 5s linear 1s infinite alternate;
+	-o-animation: left-to-right 5s linear 1s infinite alternate;
+	-ms-animation: left-to-right 5s linear 1s infinite alternate;
+	-moz-animation: left-to-right 5s linear 1s infinite alternate;
+}
+
+@keyframes left-to-right {
+	0% {
+		transform: translate(0px, 0px);
+		-webkit-transform: translate(0px, 0px);
+		-o-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+	}
+
+	50% {
+		transform: translate(50px, 0px);
+		-webkit-transform: translate(50px, 0px);
+		-o-transform: translate(50px, 0px);
+		-moz-transform: translate(50px, 0px);
+		-ms-transform: translate(50px, 0px);
+	}
+
+	100% {
+		transform: translate(100px, 0px);
+		-webkit-transform: translate(100px, 0px);
+		-o-transform: translate(100px, 0px);
+		-moz-transform: translate(100px, 0px);
+		-ms-transform: translate(100px, 0px);
+	}
+	
+}

@@ -1,0 +1,186 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.content {
+	background: linear-gradient(120deg, #333, white);
+	min-height: 400vh;
+	display: grid;
+	place-items: center;
+}
+
+header {
+	--background: rgba(170, 214, 0, .85);
+	background: var(--background);
+	text-align: center;
+	position: fixed;
+	z-index: 999; 
+	width: 100%;
+	top: 0;
+	left: 0;
+	// opacity: 0.5;
+	// margin-right: 5em;
+	// margin-left: 1em;
+}
+
+nav {
+	position: absolute;
+	text-align: left;
+	top: 100%; // Push nav to the bottom of the header
+	left: 0;
+	background: var(--background);
+	width: 100%;
+	// display: none;
+	transform: scale(1, 0); // hide the nav
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		margin-bottom: 1em;
+		margin-left: 1em;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		opacity: 0;
+		transition: opacity 150ms ease-in-out; // Transition in 150 ms
+	}
+
+	a:hover {
+		color: #000;
+	}
+}
+
+.nav-toggle {
+	display: none;
+
+	&:checked {
+
+		~ nav {
+			transform: scale(1, 1); // show the nav
+
+			a {
+				opacity: 1;
+				transition: opacity 250ms ease-in-out 250ms; // Transition in 250ms with 250ms of delay to start transition
+			}
+		}
+
+	}
+
+}
+
+.nav-toggle-label {
+	position: absolute;
+	top:0;
+	left: 0;
+	// border: 1px solid red;
+	height: 100%;
+	margin-left: 1em;
+	display: flex;
+	align-items: center;
+
+	// create the center line of the toogle
+	span,
+	span::before,
+	span::after {
+		display: block;
+		background: white;
+		height: 2px;
+		width: 2em;
+		border-radius: 2px;
+		position: relative;
+	}
+
+	span::before,
+	span::after {
+		content: '';
+		position: absolute;
+	}
+
+	// create the bottom line of the toogle
+	span::before {
+		bottom: 7px;
+	}
+
+	// create the top line of the toogle
+	span::after {
+		top: 7px;
+	}
+	// span::before,
+	// span::after {
+	// 	display: block;
+	// 	background: white;
+	// 	height: 2px;
+	// 	width: 2em;
+	// }
+}
+
+@media screen and (min-width: 800px) {
+	.nav-toggle-label {
+		display: none;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr; // 4 columns
+	}
+
+	.logo {
+		grid-column: 2 / 3;
+	}
+
+	nav {
+		all: unset; // Remove all previous style
+		grid-column: 3 / 4;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		a {
+			opacity: 1;
+			position: relative;
+		}
+
+		// Create black line
+		a::before {
+			content: '';
+			display: block;
+			height: 5px;
+			background: black;
+			position: absolute;
+			top: -.75em;
+			bottom: -.75em; // If you want the line in the bottom
+			left: 0;
+			right: 0;
+			transform: scale(0, 1); // hide
+			transform-origin: left;
+			transition: transform ease-in-out 250ms;
+		}
+
+		a:hover::before {
+			transform: scale(1,1); // show
+		}
+
+		ul {
+			display: flex;
+			justify-content: flex-end;	
+			// border: solid 1px red;
+		}
+
+		li {
+			// border: solid 1px green;
+			margin-left: 3em;
+			margin-bottom: 0;
+		}
+	}
+
+}

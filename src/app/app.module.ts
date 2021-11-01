@@ -13,6 +13,12 @@ import { BoxModelComponent } from './box-model/box-model.component';
 import { CenterComponent } from './center/center.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
 import { GridboxComponent } from './gridbox/gridbox.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { BackgroundComponent } from './background/background.component';
+import { GradientComponent } from './gradient/gradient.component';
+import { AnimationComponent } from './animation/animation.component';
+import { NavWithoutJsComponent } from './nav-without-js/nav-without-js.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,13 @@ import { GridboxComponent } from './gridbox/gridbox.component';
     BoxModelComponent,
     CenterComponent,
     FlexboxComponent,
-    GridboxComponent
+    GridboxComponent,
+    SidebarComponent,
+    BackgroundComponent,
+    GradientComponent,
+    AnimationComponent,
+    NavWithoutJsComponent,
+    IndexComponent
   ],
   imports: [
     CommonModule,
