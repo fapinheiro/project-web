@@ -19,3 +19,11 @@ $height: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.center3 {
+    display: flex;
+    align-items: center; // Horizontal
+    justify-content: center; // Vertical
+    border: solid 1px blue;
+    height: 100px;
+}
