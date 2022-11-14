@@ -22,3 +22,5 @@ padding/margin: rem or em (reletive to font-size of the element), often use em f
 
 media queries: em (2em means 2 times the size of the current font)
 
+## Flex Guide
+https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=CjwKCAiA68ebBhB-EiwALVC-NshdKDeu7gmzAKW4HN7MD5QC2ATPo_03bpe3NdAEqdI95coj-wijZBoCvyIQAvD_BwE
